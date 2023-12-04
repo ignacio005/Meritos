@@ -1,6 +1,8 @@
 package dominio;
 
-public abstract class Meritos {
+import java.io.Serializable;
+
+public abstract class Meritos implements Serializable {
     protected String titulo;
 
     public Meritos(String titulo){
@@ -15,6 +17,6 @@ public abstract class Meritos {
         return titulo;
     }
 
-    public abstract float valorar();
+    public abstract double valorar();
 
 }

@@ -2,13 +2,13 @@ package dominio;
 
 public class Proyecto extends Meritos{
 
-    protected float financiacion;
-    public Proyecto(String titulo, float financiacion){
+    protected double financiacion;
+    public Proyecto(String titulo, double financiacion){
         super(titulo);
         this.financiacion = financiacion;
     }
 
-    public float valorar(){
+    public double valorar(){
         return financiacion/100000;
     }
 

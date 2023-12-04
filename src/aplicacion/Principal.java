@@ -1,4 +1,4 @@
-package presentacion;
+package aplicacion;
 import dominio.Articulo;
 import dominio.Proyecto;
 import dominio.Catedratico;
@@ -36,7 +36,7 @@ public class Principal{
         pt1.annadirMerito(proyecto1);
 //Se procede con el catedrático de forma análoga a como
 //se ha procedido con el profesor titular.
-        Catedratico ct1 = new Catedratico("Pepe");
+        Catedratico ct1 = new Catedratico("Manuel");
         ct1.annadirMerito(articulo3);
         ct1.annadirMerito(articulo4);
         ct1.annadirMerito(proyecto2);

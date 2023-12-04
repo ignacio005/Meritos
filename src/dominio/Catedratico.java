@@ -8,8 +8,13 @@ public class Catedratico extends Profesor{
         super(nombre);
     }
 
+    @Override
+    public double calcularValoracion() {
+        return 0;
+    }
+
     public double valorar(){
-        float suma=0;
+        double suma=0;
         for(Meritos m: meritos){
             suma+=pow(m.valorar(),2);
 
