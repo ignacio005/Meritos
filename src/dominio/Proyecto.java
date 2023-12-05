@@ -12,4 +12,8 @@ public class Proyecto extends Meritos{
         return financiacion/100000;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Financiacion: " + financiacion;
+    }
 }

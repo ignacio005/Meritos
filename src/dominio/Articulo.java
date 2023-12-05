@@ -11,5 +11,8 @@ public class Articulo extends Meritos{
         return impacto;
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() + "Impacto: "+ impacto;
+    }
 }

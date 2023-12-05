@@ -19,4 +19,8 @@ public abstract class Meritos implements Serializable {
 
     public abstract double valorar();
 
+    @Override
+    public String toString() {
+        return "Merito: "+titulo+"\nValoracion:" + valorar();
+    }
 }

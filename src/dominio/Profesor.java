@@ -17,4 +17,14 @@ public abstract class Profesor implements Serializable {
         meritos.add(m);
         return this;
     }
+
+    public boolean equals(Object obj){
+        Profesor p = (Profesor) obj;
+        return this.nombre.equals(p.nombre);
+    }
+
+    @Override
+    public String toString() {
+        return  "Nombre: " + nombre+ "\nMeritos: "+ meritos;
+    }
 }
